@@ -1,0 +1,13 @@
+[
+  {
+    "org": "Giterica",
+    "repo": "client",
+    "user": {
+      "name": "ie"
+    },
+    "commit": {
+      "hash": "00000000000000a",
+      "message": "webpack config fixes"
+    }
+  }
+]
