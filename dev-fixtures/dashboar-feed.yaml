@@ -1,0 +1,44 @@
+- scope: /giterica/client
+  time: 1515385986615
+  user:
+    name: ie
+    userpic: https://secure.gravatar.com/avatar/1973183ffa81c9c72d01592616de76d2
+  action: create
+  type: issue
+  data:
+    issue:
+      number: 1
+      title: nginx conf, /ablk proxy
+- scope: /giterica/client
+  time: 1515384793062
+  user:
+    name: ie
+    userpic: https://secure.gravatar.com/avatar/1973183ffa81c9c72d01592616de76d2
+  action: create
+  type: commit
+  data:
+    commit:
+      branch: master
+      hash: 3a3a3a33a3aa3
+      message: webpack confing fixes
+- scope: /giterica
+  time: 1515384773664
+  user:
+    name: ie
+    userpic: https://secure.gravatar.com/avatar/1973183ffa81c9c72d01592616de76d2
+  action: create
+  type: repo
+  data:
+    repo:
+      slug: client
+- scope: /
+  time: 1515384659998
+  user:
+    name: ie
+    userpic: https://secure.gravatar.com/avatar/1973183ffa81c9c72d01592616de76d2
+  action: create
+  type: project
+  data:
+    project:
+      slug: giterica
+      name: Giterica
