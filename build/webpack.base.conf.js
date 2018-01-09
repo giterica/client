@@ -54,12 +54,12 @@ module.exports = {
       {
         test: /\.js$/,
         use: utils.scriptLoaders(scriptLoadersOptions).js,
-        include: [resolve('src'), resolve('test')]
+        include: [resolve('src')]
       },
       {
         test: /\.ts$/,
         use: utils.scriptLoaders(scriptLoadersOptions).ts,
-        include: [resolve('src'), resolve('test')]
+        include: [resolve('src')]
       },
       {
         test: /\.html?$/,
