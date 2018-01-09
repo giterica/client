@@ -1,0 +1,28 @@
+{
+  "name": "giterica-client",
+  "version": "0.0.1",
+  "description": "Mobile-friendly web SPA Giterica client. Javascript/TypeScript, Vue.js, Vuex, Vue router, Bootstrap4, Webpack, Protobuf/gRPC, Docker.",
+  "scripts": {
+    "fixtures": "gulp fixtures"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giterica/giterica-client.git"
+  },
+  "keywords": [
+    "giterica"
+  ],
+  "author": {
+    "name": "Ilya Erokhin",
+    "email": "sniffsla@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giterica/giterica-client/issues"
+  },
+  "homepage": "https://github.com/giterica/giterica-client#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-yaml": "^1.0.1"
+  }
+}
