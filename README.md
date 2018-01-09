@@ -6,8 +6,20 @@ Mobile-friendly web SPA Giterica client. Javascript/TypeScript, Vue.js, Vuex, Vu
 Build setup
 -----------
 
+This build system starts from template <https://github.com/Toilal/vue-webpack-template>.
+Reason: <https://github.com/vuejs/vue-cli/issues/263#issuecomment-351552812>.
+
 ```bash
 npm i
+
+# serve with hot reload at localhost:8080
+npm start
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
 ### Fixtures for development
