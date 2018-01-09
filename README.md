@@ -10,7 +10,7 @@ Build setup
 npm i
 ```
 
-### Fixtures for develpoment
+### Fixtures for development
 
 Render JSON from YAML source (``src/dev-fixtures`` => ``fixtures-json-render``):
 
