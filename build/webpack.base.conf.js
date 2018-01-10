@@ -56,6 +56,10 @@ module.exports = {
         loader: 'pug-loader',
       },
       {
+        test: /\.scss$/,
+        loader: 'sass-loader',
+      },
+      {
         test: /\.js$/,
         use: utils.scriptLoaders(scriptLoadersOptions).js,
         include: [resolve('src')]

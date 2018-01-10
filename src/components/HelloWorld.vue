@@ -26,7 +26,9 @@
         a(href='https://github.com/vuejs/awesome-vue', target='_blank') awesome-vue
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+  $aColor: #42b983;
+
   h1, h2 {
     font-weight: normal;
   }
@@ -42,7 +44,7 @@
   }
 
   a {
-    color: #42b983;
+    color: $aColor;
   }
 </style>
 
