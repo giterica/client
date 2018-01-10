@@ -25,7 +25,9 @@
   "homepage": "https://github.com/giterica/giterica-client#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-yaml": "^1.0.1"
+    "gulp-yaml": "^1.0.1",
+    "pug": "^2.0.0-rc.4",
+    "pug-loader": "^2.3.0"
   },
   "devDependencies": {
     "vue": "^2.5.2",

@@ -52,6 +52,10 @@ module.exports = {
         options: vueLoaderConfig
       },
       {
+        test: /\.pug$/,
+        loader: 'pug-loader',
+      },
+      {
         test: /\.js$/,
         use: utils.scriptLoaders(scriptLoadersOptions).js,
         include: [resolve('src')]
