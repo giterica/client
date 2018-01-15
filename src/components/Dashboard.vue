@@ -3,8 +3,9 @@
     h1.
       Dashboard view
     div(v-for="i in items")
-      div.
-        {{ i.scope }}
+      div
+        i.fas.fa-tag
+        |  {{ i.scope }}
 </template>
 
 <script lang="ts">
