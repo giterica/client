@@ -1,5 +1,7 @@
 <template lang="pug">
   #app
+    nav.navbar.navbar-dark.bg-dark
+      | navbar content
     router-view
 </template>
 
