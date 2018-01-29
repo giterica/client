@@ -2,10 +2,36 @@
   .container
     h1.
       Dashboard view
-    div(v-for="i in items")
+    div(v-for="i, num in items")
       div
-        i.fas.fa-tag
-        |  {{ i.scope }}
+        // userpic
+        div
+          a(:href="'/' + i.user.name")
+            img(:src="i.user.userpic")
+        
+        // username
+        a(:href="'/' + i.user.name").
+          {{ i.user.name }}
+
+        // type/action
+        template(v-if="i.type === 'project' && i.action === 'create'")
+          |  created project   
+          a(:href="'/' + i.data.project.slug").
+            {{ '/' + i.data.project.slug }}
+        template(v-else-if="i.type === 'repo' && i.action === 'create'")
+          |  created repository     
+          a(:href="i.scope + '/' + i.data.repo.slug") {{ i.data.repo.slug }}
+          
+        // scope
+        template(v-if="i.scope !== '/'")
+          |  at  
+          a(:href="i.scope").
+            {{ i.scope }}
+          
+        // type icon
+        .float-right
+          i.fas(:class="typeIcons[i.type]")
+      hr(v-if="num < items.length - 1")
 </template>
 
 <script lang="ts">
@@ -13,8 +39,19 @@
   import Component from 'vue-class-component';
   const items = require("../../fixtures-json-render/dashboard-feed.json");
 
+  const typeIcons = {
+    issue: "fa-exclamation-triangle",
+    commit: "fa-check-circle",
+    repo: "fa-home",
+    project: "fa-building",
+  };
+
   @Component
   export default class Dashboard extends Vue {
-    items = items
+    items = items;
+    typeIcons = typeIcons;
   }
 </script>
+
+<style lang="scss">
+</style>
