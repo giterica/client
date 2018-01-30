@@ -20,12 +20,15 @@
             {{ '/' + i.data.project.slug }}
         template(v-else-if="i.type === 'repo' && i.action === 'create'")
           |  created repository     
-          a(:href="i.scope + '/' + i.data.repo.slug") {{ i.data.repo.slug }}
+          a(:href="'/' + i.scope + '/' + i.data.repo.slug") {{ i.data.repo.slug }}
+        template(v-else-if="i.type === 'push' && i.action === 'create'")
+          |  pushed to     
+          a(:href="'/' + i.scope + '/tree/' + i.data.push.branch") {{ i.data.push.branch }}
           
         // scope
         template(v-if="i.scope !== '/'")
           |  at  
-          a(:href="i.scope").
+          a(:href="'/' + i.scope").
             {{ i.scope }}
           
         // type icon
@@ -41,7 +44,7 @@
 
   const typeIcons = {
     issue: "fa-exclamation-triangle",
-    commit: "fa-check-circle",
+    push: "fa-upload",
     repo: "fa-home",
     project: "fa-building",
   };
