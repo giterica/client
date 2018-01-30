@@ -15,12 +15,15 @@
     name: ie
     userpic: https://secure.gravatar.com/avatar/1973183ffa81c9c72d01592616de76d2
   action: create
-  type: commit
+  type: push
   data:
-    commit:
+    push:
       branch: master
-      hash: 3a3a3a33a3aa3
-      message: webpack confing fixes
+      commits:
+        - hash: 3a3a3a33a3aa3
+          message: webpack confing fixes
+        - hash: c5c5aaaaaaaa66666
+          message: Some awesome changes
 - scope: /giterica
   time: 1515384773664
   user:
