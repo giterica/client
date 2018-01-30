@@ -1,6 +1,6 @@
 [
   {
-    "scope": "/giterica/client",
+    "scope": "giterica/client",
     "time": 1515385986615,
     "user": {
       "name": "ie",
@@ -16,7 +16,7 @@
     }
   },
   {
-    "scope": "/giterica/client",
+    "scope": "giterica/client",
     "time": 1515384793062,
     "user": {
       "name": "ie",
@@ -41,7 +41,7 @@
     }
   },
   {
-    "scope": "/giterica",
+    "scope": "giterica",
     "time": 1515384773664,
     "user": {
       "name": "ie",
