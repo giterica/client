@@ -1,7 +1,8 @@
 <template lang="pug">
   #app
     nav.navbar.navbar-dark.bg-dark
-      | navbar content
+      .navbar-brand.
+         Giterica
     router-view
 </template>
 
